@@ -14,7 +14,7 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
 
-app.use(cors({ origin: 'https://diplomvk.nomoreparties.co', credentials: true }));
+app.use(cors({ credentials: true }));
 
 app.use(cookieParser());
 
