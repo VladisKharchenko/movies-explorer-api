@@ -1,1 +1,1 @@
-# movies-explorer-api
+Домен: api.diplomvk.nomoredomainsicu.ru
