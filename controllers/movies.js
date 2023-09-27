@@ -71,7 +71,7 @@ const deleteMovie = async (req, res, next) => {
   } catch (error) {
     if (error.name === 'CastError') {
       return next(
-        new CustomError('Переданы некорректные данные для удаления фильма'),
+        new CustomError(`Переданы некорректные данные для удаления фильма ${movieId}`),
       );
     }
     return next(error);
