@@ -39,7 +39,7 @@ router.delete(
   celebrate({
     params: Joi.object()
       .keys({
-        movieId: Joi.string().hex(),
+        movieId: Joi.string().hex().length(24).required(),
       }),
   }),
   deleteMovie,
